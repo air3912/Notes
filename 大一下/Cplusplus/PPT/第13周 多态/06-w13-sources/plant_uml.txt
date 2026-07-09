@@ -1,0 +1,49 @@
+@startuml
+interface Shape {
+  {abstract} void draw()
+  {abstract} <<destructor>>Shape()
+}
+
+abstract class AbstractShape2D{
+  Vector2D origin
+  {abstract} void getArea()=0
+  {abstract} void getPerimeter()=0
+  bool isVisible()
+  void setVisble(bool v)
+  void moveTo(int x,int y)
+}
+
+Shape <|.. AbstractShape2D
+
+class Point <<final>>{
+}
+class Circle <<final>>{
+  double r
+  void expand(int delta)
+}
+
+AbstractShape2D <|-- Point 
+AbstractShape2D <|-- Circle 
+
+class ShapeManager <<singleton>> {
+  vector<Shape *> shapes
+  - void addShape(Shape& shp)
+  - void removeShape(Shape& shp)
+  {static} ShapeManager& getInstance()
+  void drawShapes()
+}
+
+ShapeManager *-- Shape
+AbstractShape2D ..> ShapeManager:<<friend>>
+
+abstract class SimulationSystemSimpleAbstractFramwork {
+  {abstract} void init()=0
+  {abstract} void tick()=0
+  {abstract} void before_run()
+  int run(int fps=60, int breakout=32)
+  {abstract} void after_run()
+}
+
+ShapeManager <.. SimulationSystemSimpleAbstractFramwork : drawShapes()
+
+@enduml

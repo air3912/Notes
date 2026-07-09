@@ -1,0 +1,33 @@
+name: my-transformer
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - numpy<2.0
+  - pandas
+  - matplotlib
+  - jupyterlab
+  - ipykernel
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.1
+  - scipy
+  - scikit-learn
+  - tqdm
+  - sentencepiece
+  - pip:
+      - transformers>=4.45,<5
+      - datasets
+      - accelerate
+      - evaluate
+      - peft
+      - safetensors
+      - huggingface_hub
+      - tensorboard
+      - "protobuf<3.21"  # 修正后的语法
+      - dataclasses

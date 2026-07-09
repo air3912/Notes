@@ -1,0 +1,128 @@
+\documentclass{ctexart}%ctexart中文编译
+
+%%导言区，用于插入宏包
+\usepackage{graphicx} % Required for inserting images
+\usepackage{geometry} % 用于设置页边�?
+\usepackage{lastpage}
+\usepackage{lipsum} %生成随机虚拟文本
+\usepackage{fancyhdr} % 自定义页眉页�?
+\usepackage{booktabs}%插入三线�?
+\usepackage{amsmath,amsfonts,amsthm}%数学常用
+\usepackage{bm}%数学常用
+\usepackage{mathrsfs}%数学�?
+\usepackage{listings}
+\usepackage{xcolor}
+
+
+
+%%设置文章格式
+\geometry{left=2.5cm,right=2.5cm,top=2cm,bottom=2cm}
+\pagestyle{fancy}%输入empty就是不需�?
+\fancyhf{}
+\lhead{}
+\rhead{by air}
+\cfoot{\protect 第\thepage 页}
+
+
+%设置代码高亮格式
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codeblue}{rgb}{0,0,0.5}
+
+\lstset{
+  backgroundcolor=\color{white},   % 背景颜色
+  commentstyle=\color{codegreen},  % 注释颜色
+  keywordstyle=\color{codeblue},   % 关键词颜�?
+  stringstyle=\color{codegray},    % 字符串颜�?
+  basicstyle=\ttfamily\small,      % 字体和大�?
+  breaklines=true,                  % 自动换行
+  numbers=left,                     % 行号在左
+  numberstyle=\tiny\color{codegray},% 行号样式
+  frame=single,                     % 加边�?
+  captionpos=b,                     % 标题在代码块底部
+  tabsize=2,                        % 制表符大�?
+  language=C                        % 默认语言为C
+}
+
+
+
+\title{第一周：初遇or旧识}
+\author{Air}
+
+
+\begin{document}
+
+\maketitle
+
+\includegraphics[width=0.8\textwidth]{hhhhh.png}
+
+{\LARGE Don't be worried, I will tell you the truth.}
+\newpage
+
+最基础的一部分了这是，完整的格式化结构如下�?
+
+{\huge\%[标志][宽度][.精度][长度修饰符]类型}
+
+
+
+\section{输出格式}
+这里现列举几个常见的输出格式�?
+
+\vspace{7pt}
+\hrule
+\vspace{1pt}
+
+\begin{itemize}
+    \item 十进制整数\%d和\%i�?
+    \item 无符号十进制整数\%u�?
+    \item 无符号八进制整数\%o�?
+    \item 无符号十六进制整数\%x�?
+    \item 打印地址用的\%p�?
+    \item 科学计数法打印的\%e or \%E�?
+    \item 智能选择浮点数输出方式的\%g
+\end{itemize}
+
+\hrule
+\vspace{6pt}
+
+\%d 与 \%i 的区别：虽然 printf 中它们完全相同，但在 scanf 函数中它们有区别。在 scanf 中，\%i 可以识别十进制、八进制（以 0 开头）和十六进制（ 0x 开头）的输入， \%d 只识别十进制
+
+\section{长度修饰}
+也是几个常见
+\vspace{6pt}
+\hrule
+
+\begin{itemize}
+    \item 有l
+    \item 有ll
+    \item 有L大写一般与浮点数搭配
+    \item 有z，常用于打印sizeof的返回
+    \item 有t，用于打印地址相减的结
+    \item 有hh，用于数据截断，只输出后面几个字节（好像吧
+\end{itemize}
+
+\vspace{6pt}
+\hrule
+\subsection{对齐补零}
+额，这个很简单，还是提一嘴吧，万一太久不用给忘记了
+
+\vspace{6pt}
+\hrule
+\vspace{6pt}
+\begin{itemize}
+    \item \%-8.2f表示左对齐，补空
+    \item \%08.2f表示右对齐，补零
+    \item \%\#表示输出十六进制时加0x
+\end{itemize}
+
+这里补充一点，\#与-都是标志的一类，谁前谁后都可
+
+\vspace{3pt}
+\hrule
+以下是几个注意点：
+没有unsigned float的说法，unsign用于修饰整数类型
+
+
+
+
+\end{document}

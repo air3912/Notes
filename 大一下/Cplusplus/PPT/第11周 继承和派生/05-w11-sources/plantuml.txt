@@ -1,0 +1,30 @@
+@startuml
+class LOCATION {
+  # int x_pos
+  # int y_pos
+  + int get_x ()
+  + int get_y ()
+}
+
+class POINT{
+  # bool visible
+  + bool is_visible ()
+  + void show ()
+  + void hide ()
+  + void move_to (int x, int y)
+}
+
+LOCATION <|-- POINT
+
+class CIRCLE {
+  # int radius
+  + void show ()
+  + void hide ()
+  + void move_to (int x, int y)
+  + void expand(int delta)
+  + void contract(int delta)
+}
+
+POINT <|-- CIRCLE 
+
+@enduml

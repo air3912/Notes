@@ -1,0 +1,112 @@
+
+===== PAGE 1 =====
+▒▓中山大学本科生期末考试试卷▒▓ 
+中山大学本科生期末考试 
+考试科目：《 数字电路》（A卷） 
+学年学期：2017 学年第二学期    姓    名：                          
+学 院/系：电子与信息工程学院    学    号：                          
+考试方式：闭卷               年级专业：                          
+考试时长：120 分钟       班    别：                          
+ 
+ 警示 《中山大学授予学士学位工作细则》第八条：“考试作弊者，不授予学士学位。” 
+ 
+------------以下为试题，共 2道大题，总分 100分,考生请在答题纸上作答------------ 
+一、 填空题（共 25 小题，每个答案 2  分，共 5 0  分） 
+1. Convert the decimal -86 to signed binary(把十进制数-86 转为带符号二进制数) :     ;   
+2. Convert decimal number 0.32 to binary number (six significant b its) (把小数 0.32 转为
+具有六位有效数字的二进制数) :     ;   
+3. The 2’s complement of 100101 (100101的补码)  i s :     ;   
+4. Convert binary number 10010 to gray code (把二进制数 10010 转为格雷码) :     ;  
+5. The odd parity bit for 1100 0011 is（数据 1100 0011 的奇校验位是）:     ;   
+6. The detailed expression for X AB=⊕ ( X AB=⊕ 的具体表达式)  i s :             ;   
+7. Convert () ()  + +XA B A B C=+ t o  s t a n d a r d  P O S  f o r m（把 () ()  + +XA B A B C=+ 转化为标准
+POS）:             ;   
+8. The circuit shown is equivalent to (图所示电路等效为哪种逻辑门) :             ;   
+9. The circuit shown will have identical logic out if all gates ar e changed to (当所示电路中
+的所有门电路换成何种逻辑门，该电路的逻辑功能保持不变) :             ;   
+10. Comparators can be expanded usin g the configuration as shown ( 比较器可用如下所示
+方式进行扩展 ). The comparator which represents LSB is ( 表达低位的比较器
+是)  :             ;  
+ 
+  
+( Q u e s t i o n .  8 )             ( Q u e s t i o n .  9 )                     ( Q u e stion. 10) 
+11. The time interval illustrated is called (图中的时间间隔称为) :     ;   
+
+===== PAGE 2 =====
+▒▓中山大学本科生期末考试试卷▒▓ 
+12. If the output signal of a one s hot circuit is obtained as follo w, determine whether this one 
+shot is retriggerable or not ? ( 如果一个单稳电路的输出信号如下图所示，确定这个单
+稳是否可重复触发？) :     ;   
+ 
+  
+( Q u e s t i o n .  1 1 )                                    ( Q u e s t i o n .  1 2 ) 
+13. The given circuit based on 555 timer is a (图中所示基于 555 定时器的电路为) :     ;   
+14. For the given circuit, assume the input frequency ( fin) is 512 Hz(对于给定电路，假设输
+入信号频率 fin 为 512 Hz), the output frequency ( fout) will be( 则输出信号频率 fout
+为) :     ;   
+    
+   
+( Q u e s t i o n .  1 3 )                             ( Q u e s t i o n .  1 4 )  
+15. The delay time caused by a 8-bit serial-in/ serial-out shift re gister is(一个八位串入/串出
+移位寄存器提供的延迟时间为) :    clock period(s)( 时钟周期); 
+16. If the present state for a 4-bit Johnson counter is 1100(如果一个四位 Johnson Counter 的
+当前状态是 1100), the next state is(那么下一个状态是) :     ;   
+17. The main advantage of static RAM compared to dynamic RAM is ( 相比于动态 RAM, 
+静态 RAM 的主要优点为) :     ;   
+18. Among Mask ROM, PROM and EEPROM ( 在 Mask ROM, PROM 和 EEPROM中), 
+which cell is erasable? (哪种 ROM 可擦除？)     ;  
+19. Which type of memory expansion is implemented using the circuit  shown? (图中所示电
+路是用来实现何种内存扩展？)     ;   
+20. The number of comparators required in a 8-bit flash ADC is (一个 8位快速 ADC中所需
+要的比较器数目是) :     ;  
+21. The ADC circuit shown is a (图中所示是哪种类型 ADC电路) :     ;   
+       
+  
+( Q u e s t i o n .  1 9 )                               ( Q u e s t i o n .  2 1 )  
+===== PAGE 3 =====
+▒▓中山大学本科生期末考试试卷▒▓ 
+22. The DAC circuit shown is a (图中所示是哪种类型 DAC电路) :     ;   
+23. What is the logic function performed by the circuit? (该电路实现的逻辑功能是? )  :     ;    
+24. Will Q2 be on or off for the given inputs? (给定以下输入 A、B的组合，Q2是导通或
+截止？)  
+   A = L o w ,  B = L o w :     ;  A = L o w ,  B = H i g h :     ;   
+ 
+( Q u e s t i o n .  2 2 )                      ( Q u e s t i o n .  2 3 )              (Question. 24) 
+二、分析设计题（共 4  小题，共 50 分）                                
+1. Write the output expression for the circuit shown below, obtain  the truth table according 
+to the expression, and determine the logic function. ( 写出所示逻辑电路的输出表达式, 
+列出真值表,并确定其逻辑功能) (8 points) 
+A
+B
+C
+Y
+ 
+(Question. 1) 
+ 
+2. Design a 1 bit full subtractor ( 设计一个一位全减器来计算 A-B-C), which computes 
+A-B-C, where C is the borrow from the next less significant dig it (其中 C是来自低位的
+借位). It produce a difference D and a borrow from the next more si gnificant bit P. (它将
+得到差 D和对高位的借位 P) 
+(a) Implement the full subtractor by gates(write down the logic fun ctions for the D and P, 
+don’t draw the circuit diagram) (采用逻辑门实现这个全减器，只需写出D和 P 的逻辑
+表达式，不需要画出电路图) (8 points) 
+(b) Implement the full subtractor by 74LS153 multiplexer and some g ates (draw the circuit 
+diagram). 74HC153 has two identical 4-input multiplexers which select two bits of data 
+from up to four sources according to common data select inputs.  (采用 74LS153和逻辑
+门来实现这个全减器，需画出具体电路图，其中74HC153 包含两个四输入多路复用
+器) (4 points) 
+===== PAGE 4 =====
+▒▓中山大学本科生期末考试试卷▒▓ 
+ 
+(Question. 2) 
+ 
+3. Determine the logic function of  the circuit sketched below. ( 确定下图所示电路的逻辑
+功能) The detailed procedure is required. (需给出具体过程) (14 points) 
+ 
+(Question. 3) 
+ 
+4. Design a synchronous modulus-5 counter using D flip-flops and n ecessary gates(用 D触
+发器和必要逻辑门设计一个同步模-5 计数器). The counter is required to go through 
+the following sequence: 0->2->4->1->3->0->…. (要求计数器产生以下时序: 0, 2, 4, 1, 3, 
+0,…) The detailed procedure is required. (需给出具体过程). (16 points) 
+ 

@@ -1,0 +1,214 @@
+
+===== PAGE 1 =====
+▒▓中山大学本科生期末考试试卷▒▓ 
+中山大学本科生期末考试 
+考试科目：《 数字电路》（A卷）答案 
+学年学期：2017 学年第二学期    姓    名：                          
+学 院/系：电子与信息工程学院    学    号：                          
+考试方式：闭卷               年级专业：                          
+考试时长：120 分钟       班    别：                          
+ 
+ 警示 《中山大学授予学士学位工作细则》第八条：“考试作弊者，不授予学士学位。” 
+ 
+------------以下为试题，共 2道大题，总分 100分,考生请在答题纸上作答------------ 
+一、 填空题（共 25 小题，每个答案 2  分，共 5 0  分） 
+1. 10101010 
+2. 0.0101000 
+3. 011011 
+4. 11011 
+5. 1 
+6. X AB AB  
+7.     + + +XA B C A B C A B C    
+8. AND 
+9. NAND 
+10. COMP A 
+11. Propagation delay 传输延迟时间 
+12. 不可重复触发 
+13. Astable multivibrator 振荡器 
+14. 2Hz 
+15. 8 
+16. 1000 
+17. Faster speed 速度快 
+18. EEPROM 
+19. word length 字长 
+20. 255 
+21. Dual slope ADC 
+22. R-2R Ladder DAC 
+23. NOT 
+24. ON OFF 
+
+===== PAGE 2 =====
+▒▓中山大学本科生期末考试试卷▒▓ 
+二、分析设计题（共 4  小题，共 50 分）                                
+1. Write the output expression for the circuit shown below, obtain  the truth table according to 
+the expression, and determine the logic function. ( 写出所示逻辑电路的输出表达式, 列出
+真值表,并确定其逻辑功能) (8 points) 
+A
+B
+C
+Y
+ 
+(Question. 1) 
+答案: 
+YA B B C A C                                                    ( 2 points) 
+ 
+Input 
+A B C Y 
+0 0 0 0 
+0 0 1 1 
+0 1 0 1 
+0 1 1 1 
+1 0 0 1 
+1 0 1 1 
+1 1 0 1 
+1 1 1 0 
+                                                                   ( 4 points) 
+Logic function：T h e  o u t p u t  i s  h i g h  w h e n  t h e  i n p u t s  a r e  d i f f e r e n t .                ( 2 points) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+===== PAGE 3 =====
+▒▓中山大学本科生期末考试试卷▒▓ 
+2. Design a 1 bit full subtractor ( 设计一个一位全减器来计算 A-B-C), which computes 
+A-B-C, where C is the borrow from the next less significant dig it (其中 C是来自低位的
+借位). It produce a difference D and a borrow from the next more si gnificant bit P. (它将
+得到差 D和对高位的借位) 
+(a) Implement the full subtractor by gates(write down the logic fun ctions for the D and P, 
+don’t draw the circuit diagram) (采用逻辑门实现这个全减器，只需写出D和 P 的逻辑
+表达式，不需要画出电路图) (8 points) 
+(b) Implement the full subtractor by 74LS153 multiplexer and some g ates (draw the circuit 
+diagram). 74HC153 has two identical 4-input multiplexers which select two bits of data 
+from up to four sources according to common data select inputs.  (采用 74LS153和逻辑
+门来实现这个全减器，需画出具体电路图，其中74HC153 包含两个四输入多路复用
+器) (4 points) 
+ 
+(Question. 2) 
+答案: 
+The truth table for the full subtractor is as follows: 
+ 
+a b c p d 
+0 0 0 0 0 
+0 0 1 1 1 
+0 1 0 1 1 
+0 1 1 1 0 
+1 0 0 0 1 
+1 0 1 0 0 
+1 1 0 0 0 
+1 1 1 1 1 
+                                                                          ( 4  p o i n t s )  
+bacacbabcbcacbacbap
+cbacbacbacbad
+
+
+                                 (4 points) 
+ 
+===== PAGE 4 =====
+▒▓中山大学本科生期末考试试卷▒▓ 
+        (4 points) 
+ 
+3. Determine the logic function of  the circuit sketched below. ( 确定下图所示电路的逻辑
+功能) The detailed procedure is required. (需给出具体过程) (14 points) 
+ 
+(Question. 3) 
+ 
+答案: 
+Excitation expression:  
+ 
+State expression:  
+ 
+===== PAGE 5 =====
+▒▓中山大学本科生期末考试试卷▒▓ 
+Output expression:  
+                                                      (6 points) 
+ 
+ X = 0  X = 1  
+00 00 / 0 01 / 0 
+01 01 / 0 10 / 0 
+10 10 / 0 11 / 0 
+11 11 / 0 00 / 1 
+                                                                             (4 points) 
+ 
+Logic function: 
+When X=0, the circuit remains unchanged. 
+When X=1, the circuit is a four bits synchronous binary counter.      (4 points) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+===== PAGE 6 =====
+▒▓中山大学本科生期末考试试卷▒▓ 
+4. Design a synchronous modulus-5 counter using D flip-flops and n ecessary gates(用 D触
+发器和必要逻辑门设计一个同步模-5 计数器). The counter is required to go through 
+the following sequence: 0->2->4->1->3->0->…. (要求计数器产生以下时序: 0, 2, 4, 1, 3, 
+0,…) The detailed procedure is required. (需给出具体过程). (16 points) 
+ 
+答案: 
+ 
+  Z 
+000 010 0 
+010 100 0 
+100 001 0 
+001 011 0 
+011 000 1 
+                                                                             (6 points) 
+ 
+The K-map   
+Q1Q0 Q1Q0 Q1Q0
+Q2 Q2 Q2
+0001 1100 010 0
+0XX X 0X X X 1X X X
+Q1Q0
+Q2
+0010
+0XX X
+10
+0
+1
+0
+1
+00 01 11
+0
+1
+00 01 11 10
+1
+00 01 11 10 00 01 11 10
+0
+012 QQD  211 QQD  0120 QQQD 
+01QQZ 
+                                                          (4 points) 
+Excitation expression. 
+      (4 points) 
+Check self boot 
+ 
+  Z 
+===== PAGE 7 =====
+▒▓中山大学本科生期末考试试卷▒▓ 
+000 010 0 
+010 100 0 
+100 001 0 
+001 011 0 
+011 000 1 
+101 001 0 
+110 101 0 
+111 001 1 
+T h e  c i r c u i t  c a n  s e l f  b o o t .                                                      (2 points) 
+ 
+ 
